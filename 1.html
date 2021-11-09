@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Lodge</title>
+  <meta charset="utf-8">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+h1 {
+  font: 60px Goudy Old Style Bold, serif;
+}
+
+h4 {
+  font: 25px Goudy Old Style Bold, serif;
+}
+
+p {
+  font: 16px Arial, sans-serif;
+}
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #000;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #fff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #006600;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Hero1.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: 2px solid #fff;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid #fff;
+}
+
+.hero-text button:hover {
+  background-color: #006600;
+  color: white;
+}
+.box {
+    padding: 0 5px 0 5px;
+}
+.box .inner {
+    background-color: #fff;
+}
+.block {
+  display: block;
+  width: 100%;
+  border: black;
+  background-color: #000000;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #006600;
+  color: white;
+}
+.fa {
+  padding: 12px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #fff;
+  color: black;
+}
+
+.fa-twitter {
+  background: #fff;
+  color: black;
+}
+.fa-youtube {
+  background: #fff;
+  color: black;
+}
+
+.fa-instagram {
+  background: #fff;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Black;
+  color: white;
+}
+
+</style>
+</head>
+<body style="background-color: #f5f0e1;">
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase">
+          <img src="TL2.png" alt="logo" style="width: 100px"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="1.html" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+                    <li class="nav-item"><a href="2.html" class="nav-link text-uppercase font-weight-bold">Services</a></li>
+                    <li class="nav-item"><a href="3.html" class="nav-link text-uppercase font-weight-bold">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+</script>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 style="font-size: 100px;">The Lodge</h1>
+    <h3>Awaken Your Senses</h3>
+    <p>at Our Premier Destination Hotels & Resort</p>
+    <br>
+    <br>
+    <span><button class="button button1">Locate us</button></span><span><button class="button button1">Book now!</button></span>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+	<center>
+	<div class="row">
+		<div class="col-md-3">
+			<a href="#" class="image-list"><img src="H.1.png" width="250px">
+        </a>
+		</div>	
+		<div class="col-md-3">
+			<a href="#" class="image-list"><img src="H.2.png" width="250px">
+      </a>
+		</div>
+		<div class="col-md-3">
+			<a href="#" class="image-list"><img src="H.3.png" width="250px">
+      </a>
+		</div>
+		<div class="col-md-3">
+			<a href="#" class="image-list"><img src="H.4.png" width="250px">
+      </a>
+		</div>
+	</div>
+</center>
+</div>
+
+<br><br>
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<h1>A LUXURY HOTELS & SPA EXPERIENCE IN THE HEART OF THE GETAWAY FROM NYC</h1>
+		</div>
+		<div class="col">
+			<h4>ABOUT OUR LUXURY PENNSYLVANIA RESORT</h4>
+			<br>
+			<p>The Lodge at Woodloch embraces a philosophy of personal awakening. As so many individuals get swept up in the whirlwind of life, our luxury Poconos resort gives you an opportunity to shift from your everyday routine and re-focus on yourself. You are able to reconnect to creative and stress-relieving outlets that will continue to benefit you long after you leave.
+      An escape to The Lodge at Woodloch will allow you to re-discover your passions or uncover new hobbies, and to leave feeling re-invigorated and re-energized…and, it's included.
+      <br><br>
+      Are you looking for a family retreat? Check out our sister resort, the award-winning Woodloch Pines Resort</p>
+      <br>
+      <button class="block">Read more</button>
+		</div>
+	</div>
+</div>
+
+<br><br><br>
+
+<footer>
+<div class="container">
+<br>
+<br>
+  <div class="row">
+    <div class="col">
+            <img src="TL2.png" width="100px"><br><br>     
+            <p>The ♦ Lodge: Hotels & Resort<br>
+            • <a href="mailto:hege@example.com">thelodge.CA@gmail.com</a> • 555-123-456 • </p>
+        </div>
+        <div class="col">
+          <h3>E-mail Subscribtion</h3>
+          <p>Subscribe to our mailing list to receive updates and promotional offers.</p>
+          <input id="myInput" size="40" placeholder="Enter your email here!">
+            <button id="myBtn" onclick="javascript:alert('Subscribe successful, you will be hearing more from us')">Subscribe</button>
+
+            <script>
+            var input = document.getElementById("myInput");
+            input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();}});
+            </script>
+        </div>
+    </div>
+    <br><br><br>
+    <center>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+    </center>
+<br>
+<p>@TheLodge Copyright 2021. All rights reserved</p>
+<br>
+<br>
+</footer>
+</body>
+</html>
